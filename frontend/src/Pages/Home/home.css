@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-attachment: fixed; /* Makes it elegant on scroll */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* Filter Row */
+.filterRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(106, 17, 203, 0.9) 0%, rgba(37, 117, 252, 0.9) 100%);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    backdrop-filter: blur(10px); /* Adds glassmorphism effect */
+}
+
+/* Data Table */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-table thead th {
+    background-color: #6a11cb;
+    color: white;
+    text-align: left;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.data-table tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: left;
+    color: #555;
+}
+
+.data-table tbody tr:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+/* Icons Handle */
+.icons-handle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    color: #6a11cb;
+    font-size: 18px;
+}
+
+/* Date Picker */
+.date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.date .form-group input {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.date .form-group input:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+/* Buttons */
+.containerBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 15px;
+}
+
+.iconBtnBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid #6a11cb;
+    border-radius: 8px;
+    background: white;
+    color: #6a11cb;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.iconBtnBox:hover {
+    background: #6a11cb;
+    color: white;
+    cursor: pointer;
+}
+
+.iconActive {
+    background-color: #6a11cb;
+    color: white;
+}
+
+.iconDeactive {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 600px) {
+    .filterRow {
+        padding: 10px;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: linear-gradient(90deg, rgba(106, 17, 203, 0.8), rgba(37, 117, 252, 0.8));
+        color: white;
+    }
+
+    .addNew {
+        display: none !important;
+    }
+
+    .mobileBtn {
+        display: inline-block !important;
+    }
+
+    .iconBtnBox {
+        padding: 8px;
+        border: 1px solid #6a11cb;
+    }
+
+    .date {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .date .form-group {
+        width: 100%;
+    }
+
+    .containerBtn {
+        margin: 0;
+        gap: 10px;
+    }
+}
