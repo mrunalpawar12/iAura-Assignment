@@ -1,6 +1,6 @@
 # Expense Tracker Application  
 
-An intuitive and user-friendly **Expense Tracker Application** designed to simplify personal finance management. The app allows users to securely manage their expenses with features for adding, viewing, editing, and deleting records. Additionally, it includes an optional data visualization feature for analyzing expenses by category using a pie chart.  
+An intuitive and user-friendly **Expense Tracker Application** designed to simplify personal finance management. The web based app allows users to securely manage their expenses with features for adding, viewing, editing, and deleting records. Additionally, it includes an optional data visualization feature for analyzing expenses by category using a pie chart.  
 
 ## Features  
 
